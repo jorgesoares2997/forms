@@ -39,7 +39,7 @@ $equips = $stmt->fetchAll();
               <td scope="row"><?= $equip["description"] ?></td>
               <td scope="row"><?= $equip["day"] ?></td>
               <td class="actions">                
-                <a href="<?=$BASE_URL?>edit.php"><i id="edit-icon" class="far fa-edit edit-icon"></i></a>
+                <a href="<?=$BASE_URL?>edit.php?id=<?= $equip["id"] ?>"><i id="edit-icon" class="far fa-edit edit-icon"></i></a>
                 <form class="delete-form" action="<?= $BASE_URL ?>manu_process.php" method="POST">
                   <input type="hidden" name="type" value="delete">
                   <input type="hidden" name="id" value="<?= $equip["id"] ?>">
