@@ -12,7 +12,7 @@
   $fullName = $user->getFullName($userData);
 
   if($userData->image == "") {
-    $userData->image = "user.png";
+    $userData->image = "jorge.jpg";
   }
 
 ?>
